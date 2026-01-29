@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.tvForgotPassword.setOnClickListener {
-            handleForgotPassword()
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
     }
 
@@ -98,40 +98,6 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(
                         this,
                         "Authentication failed: ${task.exception?.message}",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-            }
-    }
-
-    private fun handleForgotPassword() {
-        val email = binding.etEmail.text.toString().trim()
-
-        if (email.isEmpty()) {
-            binding.etEmail.error = getString(R.string.error_empty_email)
-            binding.etEmail.requestFocus()
-            return
-        }
-
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            binding.etEmail.error = getString(R.string.error_invalid_email)
-            binding.etEmail.requestFocus()
-            return
-        }
-
-        // Send password reset email
-        auth.sendPasswordResetEmail(email)
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    Toast.makeText(
-                        this,
-                        "Password reset email sent to $email",
-                        Toast.LENGTH_LONG
-                    ).show()
-                } else {
-                    Toast.makeText(
-                        this,
-                        "Failed to send reset email: ${task.exception?.message}",
                         Toast.LENGTH_LONG
                     ).show()
                 }
