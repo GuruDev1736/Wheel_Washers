@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Wheel Washers</string>
+
+    <!-- Splash Screen -->
+    <string name="tagline">Premium Car Wash Services</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_continue_with">Or continue with</string>
+
+    <!-- Signup Screen -->
+    <string name="create_account">Create Account</string>
+    <string name="signup_subtitle">Sign up to get started</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="terms_conditions">By signing up, you agree to our Terms &amp; Conditions</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_email">Please enter your email</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_empty_password">Please enter your password</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_empty_name">Please enter your name</string>
+    <string name="error_empty_phone">Please enter your phone number</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
 </resources>

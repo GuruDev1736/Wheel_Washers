@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors - Car Wash Theme -->
+    <color name="primary_blue">#1E88E5</color>
+    <color name="primary_dark_blue">#1565C0</color>
+    <color name="primary_light_blue">#42A5F5</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_light_orange">#FFB74D</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_white">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Other Colors -->
+    <color name="error_red">#E53935</color>
+    <color name="success_green">#43A047</color>
+    <color name="transparent">#00000000</color>
 </resources>
